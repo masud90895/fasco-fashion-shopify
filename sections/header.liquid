@@ -1,9 +1,9 @@
 <div class="container py-[20px] flex items-center justify-between ">
     {% comment %} logo {% endcomment %}
     
-    <h1 class="font-volkhov text-primary text-[52px] font-normal leading-[52px]">
+    <a href="/" class="font-volkhov text-primary text-[52px] font-normal leading-[52px]">
         {{ section.settings.logo }}
-    </h1>
+    </a>
 
    <div class="flex items-center gap-x-[70.42px]">
      {% comment %} menu list {% endcomment %}
@@ -21,8 +21,8 @@
     {% comment %} sign in / sign up button {% endcomment %}
 
     <div class="flex items-center gap-x-[70.42px]">
-        <a href="#" class="text-primary text-[16px] font-normal leading-normal font-poppins">Sign In</a>
-        <a href="#" class="text-white bg-black rounded-[10px] text-[16px] font-normal leading-normal shadow-lg shadow-lg font-poppins py-[20px] px-[55px]">Sign Up</a>
+        <a href="{{ section.settings.sign_in_url }}" class="text-primary text-[16px] font-normal leading-normal font-poppins">Sign In</a>
+        <a href="{{ section.settings.sign_up_url }}" class="text-white bg-black rounded-[10px] text-[16px] font-normal leading-normal shadow-lg shadow-lg font-poppins py-[20px] px-[55px]">Sign Up</a>
     </div>
 
 
@@ -67,7 +67,6 @@
             "label": "Menu",
             "default": "main-menu"
         }
-       
         ]
 }
 {% endschema %}
