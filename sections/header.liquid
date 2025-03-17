@@ -1,22 +1,23 @@
-<div class="container py-[20px] ">
+<div class="container py-[20px] flex items-center justify-between ">
     {% comment %} logo {% endcomment %}
     
-    <h1 class="font-volkhov text-primary text-[52px] font-normal leading-[52px]">FASCO</h1>
+    <h1 class="font-volkhov text-primary text-[52px] font-normal leading-[52px]">
+        {{ section.settings.logo }}
+    </h1>
 
-    {% comment %} menu list {% endcomment %}
-    <ul>
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">About</a>
-        </li>
-        <li>
-            <a href="#">Services</a>
-        </li>
+   <div>
+     {% comment %} menu list {% endcomment %}
+    <ul class="flex items-center gap-x-[70.42px]">
+        {% for link in linklists[section.settings.menu].links %}
+            <li>
+                <a href="{{ link.url }}" class="text-primary text-[16px] font-normal leading-normal font-poppins">{{ link.title }}</a>
+            </li>
+        {% endfor %}
+       
         
         
     </ul>
+   </div>
 
 
 

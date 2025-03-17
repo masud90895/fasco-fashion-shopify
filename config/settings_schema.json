@@ -7,25 +7,4 @@
     "theme_documentation_url": "https://fasco-fashion.myshopify.com/documentation",
     "theme_support_url": "https://fasco-fashion.myshopify.com/support"
   },
-  {
-    "name": "Colors",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Color settings"
-      },
-      {
-        "type": "color",
-        "id": "primary_color",
-        "label": "Primary Color",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "secondary_color",
-        "label": "Secondary Color",
-        "default": "#ffffff"
-      }
-    ]
-  }
 ]

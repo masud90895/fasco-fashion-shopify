@@ -1,1 +1,9 @@
-{}
+{
+  "theme_info": {
+    "theme_name": "Fasco Fashion",
+    "theme_version": "1.0.0",
+    "theme_author": "Fasco Fashion",
+    "theme_documentation_url": "https://fasco-fashion.myshopify.com/documentation",
+    "theme_support_url": "https://fasco-fashion.myshopify.com/support"
+  },
+}
