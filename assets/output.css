@@ -1,4 +1,5 @@
 /*! tailwindcss v4.0.14 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Volkhov&display=swap");
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -18,6 +19,7 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --font-volkhov: "Volkhov", serif;
   }
 }
 @layer base {
@@ -182,6 +184,12 @@
     @media (width >= 1554px) {
       max-width: 1554px;
     }
+  }
+  .py-\[20px\] {
+    padding-block: 20px;
+  }
+  .font-volkhov {
+    font-family: var(--font-volkhov);
   }
 }
 .container {
